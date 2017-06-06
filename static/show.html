@@ -1,4 +1,46 @@
-<h1>Show</h1>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>show page here</title>
+	<link rel="stylesheet" type="text/css" href="inter/semantic.css">
+	<link rel="stylesheet" type="text/css" href="inter/app.css">
+	<link rel="stylesheet" type="text/css" href="inter/icon.css">
+</head>
+<body>
+<div id="app">
+	<app-header title="Showcase"></app-header>
+	
+</div>
+<div id="app-nner"></div>
+<div id="app3"></div>
+<div id="app5"></div>
 
-<a href="home">Home</a>
-<a href="/">Landing</a>
+<div id="app4" class="pull-down">
+	<div class="ui container">
+		<!-- logo | big image | dis in all | by -->
+		<div class="ui three column grid">
+        <div class="four wide column">
+        	<img :src="tests.logo" class="imu">
+        	<h2 class="floated left ho">{{tests.name}} <span class="right floated  lo">{{ tests.per }}</span></h2>
+        </div>
+        <div class="eight wide column">
+        	<div>
+        		<img :src="tests.image" class="imu hi">
+        	</div>
+
+        	<div class="pane dw">
+        		<div class="body">
+        		<p class="got jo">Discription</p>
+        			<p class="dall got bo">{{tests.dis2}}</p>
+        			<p><br></p>
+        		</div>
+        	</div>
+        </div>
+      </div>
+	</div>
+</div>
+</body>
+<script src="vue.js"></script>
+<script src="app.js"></script>
+<script src="views/header.js"></script>
+</html>

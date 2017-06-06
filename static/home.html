@@ -1,4 +1,102 @@
-<h1>It works</h1>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>home page here</title>
+	<link rel="stylesheet" type="text/css" href="inter/semantic.css">
+	<link rel="stylesheet" type="text/css" href="inter/app.css">
+	<link rel="stylesheet" type="text/css" href="inter/icon.css">
+	<script type="text/javascript">
+		var userData = JSON.parse(localStorage['px_email']);
+		var name = userData.user.displayName;
+		var userPhoto = userData.user.photoURL;
+	</script>
+</head>
+<body>
+<div id="app">
+	<app-header title="Showcase" long="new"></app-header>
+</div>
+<div id="app-nner"></div>
+<div id="app3"></div>
+<div id="app4"></div>
 
-<a href="show">Show</a>
-<a href="/">Landing</a>
+<div id="app5" class="pull-down">
+	
+	<div class="ui container">
+		<!-- logo | big image | dis in all | by -->
+		<div class="ui three column grid">
+        <div class="four wide column">
+        	<img :src="tests.logo" class="prof">
+        	<p class="">
+        	<div class="ui three column grid">
+        		<span class="five wide column dall">
+        			<h5 class="lo">10</h5>projects
+        		</span>
+        		<span class="four wide column dall">
+        			<h5 class="lo">110</h5>Backers
+        		</span>
+        	</div>
+        	</p>
+        </div>
+   <!--     <div class="eight wide column">-->
+   <!--     <div class="pane bm">-->
+   <!--     <div class="bod">-->
+   <!--     	<div class="ui action left icon input wi">-->
+   <!--     	<i class="icon add"></i>-->
+   <!--     		<input type="text" name="" placeholder="Add new project, app ">-->
+   <!--     		<button class="ui button yellow"><i class="icon arrow right square"></i></button>-->
+   <!--     	</div>-->
+   <!--     </div>-->
+   <!--     </div>-->
+   <!--      <div class="pane">-->
+   <!--      	<div class="bod">-->
+   <!--      	<div class="lll">-->
+   <!--      	<span class="left floated lop lon"><a href="">-->
+   <!--      	<button class="circular ui icon button yellow"><i class="icon">Y</i></button>-->
+   <!--      	<span class="dall">Yoza app</span></a> -->
+   <!--      	<span class="dall"> <i class="icon bar chart"></i>54.5%</span></span>-->
+   <!--      	<p class="rip right floated">-->
+   <!--      	<button class="ui left attached button tiny"> <i class="icon edit"></i>Edit</button>-->
+			<!--<button class="right attached ui button tiny"><i class="icon trash"></i>Delete</button>-->
+			<!--</p>-->
+			<!--</div>-->
+   <!--      	</div>-->
+   <!--      </div>-->
+   <!--      <div class="pane">-->
+   <!--      	<div class="bod">-->
+   <!--      	<div class="lll">-->
+   <!--      	<span class="left floated lop lon"><a href="">-->
+   <!--      	<button class="circular ui icon button purple"><i class="icon">A</i></button>-->
+   <!--      	<span class="dall">Analytics app</span></a> -->
+   <!--      	<span class="dall"> <i class="icon bar chart"></i>66.9%</span></span>-->
+   <!--      	<p class="rip right floated">-->
+   <!--      	<button class="ui left attached button tiny"> <i class="icon edit"></i>Edit</button>-->
+			<!--<button class="right attached ui button tiny"><i class="icon trash"></i>Delete</button>-->
+			<!--</p>-->
+			<!--</div>-->
+   <!--      	</div>-->
+   <!--      </div>-->
+   <!--      <div class="pane">-->
+   <!--      	<div class="bod">-->
+   <!--      	<div class="lll">-->
+   <!--      	<span class="left floated lop lon"><a href="">-->
+   <!--      	<button class="circular ui icon button pink"><i class="icon">B</i></button>-->
+   <!--      	<span class="dall">Bus Go</span></a> -->
+   <!--      	<span class="dall"> <i class="icon bar chart"></i>0.5%</span></span>-->
+   <!--      	<p class="rip right floated">-->
+   <!--      	<button class="ui left attached button tiny"> <i class="icon edit"></i>Edit</button>-->
+			<!--<button class="right attached ui button tiny"><i class="icon trash"></i>Delete</button>-->
+			<!--</p>-->
+			<!--</div>-->
+   <!--      	</div>-->
+   <!--      </div>-->
+   <!--     </div>-->
+      </div>
+	</div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/4.1.1/firebase.js"></script>
+<script src="base.js"></script>
+<script src="vue.js"></script>
+<script src="app.js"></script>
+<script src="views/header.js"></script>
+</html>
